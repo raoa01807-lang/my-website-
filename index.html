@@ -1,0 +1,47 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS</title>
+</head>
+<link rel="stylesheet" href="style.CSS">
+<body>
+<h1>REGISTRATION FORM</h1>
+<h3>enter your name</h3>
+<body>
+<input text="name" placeholder ="name">
+   <br>
+   <br>
+   <h3>select your class</h3>
+<label for ="id1">
+   <input type="radio"value="X" id="id1">IX
+   <input type="radio"value="XI" id="id1">X
+   <input type="radio"value="XI" id="id1">XI
+   <input type="radio"value="XI" id="id1">XII
+
+
+      
+   </label> 
+   <br>
+   <br>
+   <h3>ENTER YOUR ROLL NUMBER</h3>
+ <input type="number" id="n1" placeholder="roll number">
+<input type="number" id="n2" placeholder="roll number"> 
+
+<button onclick="sum()">Add</butto>
+<p id="result"></p>
+
+<script>
+function sum() {
+    let a = Number(document.getElementById("n1").value);
+    let b = Number(document.getElementById("n2").value);
+
+    document.getElementById("result").innerHTML = a + b;
+}
+</script>
+
+
+</body>
+
+</html>
